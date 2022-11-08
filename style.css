@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.navbar{
+    display:flex;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.logo img{
+    width: 30px;
+    margin-right: 15px;
+    display: block;
+}
+.navbar-middle ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar-middle ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    position: relative;
+}
+.navbar-middle ul li a img{
+    width: 30px;
+}
+.navbar-middle ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: blue;
+    position: absolute;
+    bottom: -15px;
+    transition: 0.3s;
+}
+.navbar-middle ul li a:hover::after,
+.navbar-middle ul li a.active::after
+{
+    width: 100%;
+}
+.navbar-right{
+    display: flex;
+    border-left: 2px solid darkgray;
+}
+.navprofile-img{
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.downarrow{
+    width: 15px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+.searchbox{
+    background: rgba(190, 231, 247, 0.612);
+    width: 300px;
+    display: flex;
+    align-items:center;
+    padding: 0 15px;
+}
+.searchbox img{
+    width: 14px;
+}
+.searchbox input{
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+/* ------------------navbar-ends--------------------- */
+
+.container{
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.leftside{
+    flex-basis: 22%;
+    align-self: flex-start;
+    /* border: 1px solid lightgray;
+    border-radius: 4px; */
+    /* height: 100vh; */
+}
+.leftside-profile{
+    background: white;
+    border-radius: 5px;
+}
+.leftside-profile-info{
+    padding: 0;
+    display:block;
+    margin-left: 4px;
+}
+.leftside-profile-info img{
+    width: 90px;
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    margin-top: -45px;
+}
+#img1{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.itemsmyinfo{
+    display: inline-block;
+    width: 20px;
+}
+.leftside-profile-info ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.leftside-profile-info ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 20px;
+}
+.leftside-profile-info ul span{
+    float: right;
+    color: blue;
+    margin-top: -25px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.leftside-profile-info2{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-top: 2px blue;
+}
+.leftside-profile-info2 img{
+    width: 50px;
+    height: 60px;
+    margin-top: 0%;
+    display: flex;
+}
+.leftside2{
+    margin: 12px 0;
+    padding: 10px 25px;
+    background: white;
+    border-radius: 5px;
+}
+.leftside2 img{
+    width: 20px;
+    height: 20px;
+}
+.leftside2 a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.leftside2 h5{
+    color: blue;
+}
+.rightside{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.rightside-news{
+    margin:0px ;
+    background: white;
+    display: block;
+}
+.rightside-news img{
+    width: 20px;
+    float: right;
+    margin-top: -20px;
+    margin-right: 2px;
+}
+.rightside-news ul{
+    display: block;
+    align-items: center;
+}
+.rightside-news span{
+    color: rgb(148, 143, 143);
+    font-size: 10px;
+}
+.rightside-news2{
+    margin: 0;
+    margin-top: 3px;
+    background: white;
+    display: block;
+    position: relative;
+}
+.rightside-news2 img{
+    width: 20px;
+    float: right;
+    margin-top: -20px;
+    margin-right: 2px;
+}
+.rightside-news2 span{
+    color: rgb(148, 143, 143);
+    font-size: 10px;
+}
+.rightside-ads{
+    background: white;
+    display: block;
+}
+.rightside-ads>.info1{
+    width: 20px;
+    float: right;
+    margin-top: -20px;
+    margin-right: 2px;
+}
+.uni{
+    width: 40px;
+}
+.rightside-ads>.ads1{
+    display: flex;
+}
+.rightside-ads>.follow{
+    width: 250px;
+    padding: 6px 6px;
+    border: 1px solid ;
+    border-radius: 20px;
+    display: block;
+    margin-left: 40px;
+}
+.rightside-ads>h3{
+    align-self: center;
+}
+.mainnside{
+    flex-basis: 50%;
+    align-self: flex-start;
+}
